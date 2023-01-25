@@ -1,0 +1,17 @@
+# docker-compose.yml
+version: '3.6'
+
+services:
+  mongo:
+    container_name: database_mongo
+    image: mongo:6.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - 27017:27017
+    volumes:
+      - data_mongo_6:/data/db
+volumes:
+  data_mongo_6:
+    external: false
