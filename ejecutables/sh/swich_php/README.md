@@ -11,7 +11,7 @@ Previamente tener instalado mas de una version de php y registrarla en el archiv
 - Para su ejecucion:
 
     ```bash
-    bash ./swich_php.sh
+    bash ./swich_php.sh 7.1
 
     ```
 
