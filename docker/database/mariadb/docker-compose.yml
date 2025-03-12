@@ -8,6 +8,8 @@ services:
     environment:
       MARIADB_ROOT_PASSWORD: root
       MARIADB_HOST: localhost
+      TZ: America/Bogota
+    command: --default-time-zone='America/Bogota'
     ports:
       - 3306:3306
     volumes:
